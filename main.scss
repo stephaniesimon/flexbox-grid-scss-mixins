@@ -128,7 +128,7 @@ $gutter-compensation: -1 * $half-gutter-width;
     .col-#{$key} {
         $str: "&";
         @for $i from 1 through $columns {
-            $str: $str + "," & + "-" + $i + "," + & + "-offset-" + $i;
+            $str: $str + "," + & + "-" + $i + "," + & + "-offset-" + $i;
         }
 
         @at-root #{$str} {
